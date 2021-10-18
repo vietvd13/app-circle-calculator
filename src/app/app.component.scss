@@ -1,0 +1,35 @@
+.zone-app-component {
+  .container {
+    .question {
+      margin-top: 20px;
+      .card {
+        .card-body {
+          p {
+            color: $bright-gray;
+            font-weight: 400;
+          }
+        }
+      }
+    };
+
+    .zone-display-cal {
+      margin-top: 20px;
+      .card {
+        .card-body {
+          .mb-3 {
+            p {
+              font-weight: 400;
+              span {
+                font-family: 300;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .zone-calculator {
+      margin-top: 20px
+    }
+  };
+};
