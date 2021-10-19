@@ -17,6 +17,7 @@
       <div class="card">
         <div class="card-body">
           <div class="mb-3">
+            <h4>Calculation when pressing submit</h4>
             <p>Perimeter: {{ perimeter }}</p>
             <p>Area: {{ area }}</p>
           </div>
@@ -39,6 +40,7 @@
               min="1"
               placeholder="Please enter the radius"
               [(ngModel)]="radius"
+              (input)="handleAutoCal()"
             >
           </div>
 
@@ -49,6 +51,30 @@
       </div>
     </div>
     <!-- End Form Calculator -->
+
+    <!-- Start Display Question -->
+    <div class="question">
+      <div class="card">
+        <div class="card-body">
+          <h5>Question</h5>
+          <p>Ex2: Upgrade Circle Calculator in ex1 so that circumference and area are calculated and output automatically without submission</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Display Cal -->
+    <div class="zone-display-cal">
+      <div class="card">
+        <div class="card-body">
+          <div class="mb-3">
+            <h4>Automatic calculation</h4>
+            <p>Perimeter: {{ perimeter_auto }}</p>
+            <p>Area: {{ area_auto }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Display Cal -->
 
   </div>
 </div>
